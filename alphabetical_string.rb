@@ -1,3 +1,4 @@
+# Write a script function that returns a passed string with letters in alphabetical order.
 require 'pry'
 def alphabetical_string
   puts "Enter a string"
