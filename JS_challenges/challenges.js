@@ -38,6 +38,32 @@ $("#button3").click( function() {
   var out = array.sort().join("");
   $("#string_alph").text(out);
 })
+// Write a simple script to join all elements of a given array into a string
+$("#button4").click( function() {
+  var string3 = $("#string3").val();
+  var arr = string3.split(" ");
+  var string_join = arr.join("");
+  $("#string_join").text(string_join);
+})
+// Write a script to merge two arrays and removes all duplicates elements.
+$("#button_merge").click( function() {
+  var string_merge1 = $("#string_merge1").val().split(" ")
+  var string_merge2 = $("#string_merge2").val().split(" ")
+  var string_merge = string_merge1.concat(string_merge2)
+  string_merge = string_merge.filter(function(elem, pos, arr) {
+    return arr.indexOf(elem) == pos;
+  });
+  $("#string_merge").text(string_merge)
+})
+// Write a script to list the properties of a JavaScript object.
+$("#button_get_keys").click( function() {
+  var student = { 
+    name : "David Rayy", 
+    sclass : "VI", 
+    rollno : 12 };
 
+  var keys = Object.keys(student);
+  $("#string_get_keys").text(keys)
+})
 
 })
