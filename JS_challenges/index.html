@@ -3,25 +3,48 @@
   <head>
       <meta charset="utf-8">
       <title>JS Challenges</title>
-      <!-- <link rel="stylesheet" href="style.css"> -->
+      <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
       <header>
         <h1>JS Challenges</h1>
       </header>
+<!-- Odd or Even -->
       <div class="box">
         <h2>Odd or Even</h2>
         <h5>Description: Write a function using a conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign.</h5>
-        
           <h4>Type in 3 numbers: </h4>
           <input type='text' name='num1' id='num1' placeholder='Number 1' />
           <input type='text' name='num2' id='num2' placeholder='Number 2' />
           <input type='text' name='num3' id='num3' placeholder='Number 2' />
           <button id="button" class='btn btn-waves' type='submit'>Get Odd of Even</button>
-    
         <h2>Answer: <label id="odd_even"></label></h2>
+        <hr>
       </div>
+<!-- String or Empty -->
+      <div class="box">
+        <h2>String or Empty</h2>
+        <h5>Description: Write a script to check whether a string is blank or not.</h5>
+          <h4>Type in a string...or nothing: </h4>
+          <input type='text' name='string' id='string' placeholder='String' />
+          <button id="button2" class='btn btn-waves' type='submit'>Is it a String?</button>
+        <h2>Answer: <label id="string_y_n"></label></h2>
+        <hr>
+      </div>
+<!-- Alphabetical String -->
+      <div class="box">
+          <h2>Alphabetical String</h2>
+          <h5>Description: Write a script function that returns a passed string with letters in alphabetical order.
+            </h5>
+            <h4>Type in a string: </h4>
+            <input type='text' name='string' id='string2' placeholder='String' />
+            <button id="button3" class='btn btn-waves' type='submit'>Alphabetise this String</button>
+          <h2>Answer: <label id="string_alph"></label></h2>
+          <hr>
+        </div>
+
+      <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="challenges.js"></script>
   </body>
 </html>
